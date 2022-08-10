@@ -1,0 +1,55 @@
+.scrollable-container {
+    max-height: 40em;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap !important;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0px 5px;
+}
+
+.img-preview {
+    width: 2.5em;
+}
+
+.icon {
+    position: absolute;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.normal-input {
+    width: 15%;
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.prefix-input {
+    @extend .normal-input;
+    text-indent: 1.5em;
+    width: 30% !important;
+    margin-left: 0em !important;
+}
+
+.custom-input {
+    @extend .normal-input;
+    height: 2em;
+    width: 60% !important;
+}
+

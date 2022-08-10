@@ -1,1 +1,185 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    --color: #6657f4;
+    --hover-color: #4f3fe0;
+    --disabled-color: #7f79b8;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.col-6 {
+    width: calc(50% - 1em);
+    margin: 0.5em;
+    height: auto;
+    /* background-color: green; */
+}
+
+.col-12 {
+    width: calc(100% - 1em);
+    margin: 0.5em;
+    height: auto;
+    /* background-color: green; */
+}
+
+.colored {
+    color: var(--color);
+
+    &:hover {
+        color: var(--hover-color);
+    }
+}
+
+.button {
+    background-color: var(--color);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+
+    &:focus {
+        background-color: var(--hover-color);
+        box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+    }
+
+    &:active {
+        background-color: var(--hover-color);
+        box-shadow: none;
+    }
+
+    &:disabled {
+        background-color: var(--disabled-color);
+        cursor: not-allowed;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+.mt-8 {
+    margin-top: 8em;
+}
+
+.mx-1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.mx-10 {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 50%;
+    vertical-align: middle;
+    margin: 0em 1em;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: var(--hover-color);
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid var(--hover-color);
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: var(--color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--hover-color);
+}
