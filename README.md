@@ -15,3 +15,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Further help
 To get more help please contact me via LinkedIn or my email.
+
+## A Functional Demo
+A Demo for this repository will be accesible via this [link](https://neoris-pokemon.vercel.app), please consider if the backend is stopped, the frontend will be useless.
